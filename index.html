@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section class="flex">
+        <header>
+            <img class="bg-dark" src="img/x-series-removebg-preview.png" width="150px" alt="Logo do site">
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Filmes
+                                </button>
+                                <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Ação</a></li>
+                                    <li><a class="dropdown-item" href="#">Aventura</a></li>
+                                    <li><a class="dropdown-item" href="#">Comédia</a></li>
+                                    <li><a class="dropdown-item" href="#">Drama</a></li>
+                                    <li><a class="dropdown-item" href="#">Fantasia</a></li>
+                                    <li><a class="dropdown-item" href="#">Terror</a></li>
+                                    <li><a class="dropdown-item" href="#">Suspense</a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="nav-item">
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle bg-dark" style="margin-left: 5px;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Séries
+                                    </button>
+                                    <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Ação</a></li>
+                                        <li><a class="dropdown-item" href="#">Aventura</a></li>
+                                        <li><a class="dropdown-item" href="#">Comédia</a></li>
+                                        <li><a class="dropdown-item" href="#">Drama</a></li>
+                                        <li><a class="dropdown-item" href="#">Fantasia</a></li>
+                                        <li><a class="dropdown-item" href="#">Terror</a></li>
+                                        <li><a class="dropdown-item" href="#">Suspense</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Animes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Desenhos</a>
+                            </li>
+                    </ul>
+
+                </div>
+                <form class="d-flex">
+                    <input class="form-control me-2 bg-dark" style="color: white;" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn btn-outline-success bg-dark" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </nav>
+    </section>
+    <main>
+        <section>
+            <h2 class="display-6">Destaques</h2>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/homem-aranha-3-1-1.jpg" class="d-block w-100" alt="3 homens aranhas">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/the-batman-matt-reeves-reveals-robert-pattinsons-bruce-wayne_weh7-1000x450.jpg" class="d-block w-100 img-fluid" alt="Batman">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/caos-perfeiito.jpeg" class="d-block w-100 img-fluid" alt="the witcher">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+        <section>
+            <h2 class="display-6">Filmes famosos</h2>
+            <div class="filmes">
+                <div>
+                    <img src="img/ff9.jpg" class="img-fluid" alt="Velozes e furiosos">
+                    <p>Velozes e furiosos</p>
+                </div>
+                <div>
+                    <img src="img/2428965.jpg" class="img-fluid" alt="Vingadores Ultimato">
+                    <p>Vingadores Ultimato</p>
+                </div>
+                <div>
+                    <img src="img/origem dos guardioes.jpg" class="img-fluid" alt="Origem dos guardiões">
+                    <p>Origem dos guardiões</p>
+                </div>
+                <div>
+                    <img src="img/MV5BNzNlZTZjMDctZjYwNi00NzljLWIwN2QtZWZmYmJiYzQ0MTk2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg" class="img-fluid" alt="Matrix: Revolutions">
+                    <p>Matrix: Revolutions</p>
+                </div>
+                <div>
+                    <img src="img/divulgacao-08083631088018.jpg" class="img-fluid" alt="Homem-aranha">
+                    <p>Homem-aranha: No way Home</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="display-6">Maiores bilheterias do cinema de todos os tempos</h2>
+            <table style="width: 70%" class="table table-dark table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Ranking</th>
+                        <th scope="col">Filme</th>
+                        <th scope="col">Ano</th>
+                        <th scope="col">Distribuidora</th>
+                        <th scope="col">Bilheteria (US$)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Avatar</td>
+                        <td>2009</td>
+                        <td>20th Century Fox</td>
+                        <td>2 847 246 203</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Avengers: Endgame</td>
+                        <td>2019</td>
+                        <td>Walt Disney Studios Motion Pictures</td>
+                        <td>2 797 501 328</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Titanic</td>
+                        <td>1997</td>
+                        <td>Paramount Pictures / 20th Century Fox</td>
+                        <td>2 201 647 264</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Star Wars: The Force Awakens</td>
+                        <td>2015</td>
+                        <td>Walt Disney Studios Motion Pictures</td>
+                        <td>2 068 223 624</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Avengers: Infinity War</td>
+                        <td>2018</td>
+                        <td>Walt Disney Studios Motion Pictures</td>
+                        <td>2 048 359 754</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="bg-dark">
+        <img src="img/x-series-removebg-preview.png" width="150px" alt="Logo do site">
+        <p>&copy; Copyright X-Series. 2022. Todos os direitos reservados</p>
+
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</html>
